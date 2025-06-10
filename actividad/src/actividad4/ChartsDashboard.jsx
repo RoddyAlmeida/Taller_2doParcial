@@ -44,6 +44,9 @@ export default function ChartsDashboard() {
     title: {
       text: 'Distribución de Estudiantes'
     },
+    accessibility: {
+      enabled: false
+    },
     plotOptions: {
       pie: {
         allowPointSelect: true,
@@ -68,6 +71,9 @@ export default function ChartsDashboard() {
     },
     title: {
       text: 'Progreso Mensual'
+    },
+    accessibility: {
+      enabled: false
     },
     xAxis: {
       type: 'category'
@@ -94,6 +100,9 @@ export default function ChartsDashboard() {
     },
     title: {
       text: 'Datos en Tiempo Real'
+    },
+    accessibility: {
+      enabled: false
     },
     xAxis: {
       type: 'category'

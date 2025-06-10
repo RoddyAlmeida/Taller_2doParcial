@@ -5,6 +5,7 @@ import BookList from './actividad1/booklist';
 import NavBar from './actividad2/NavBar';
 import TodoApp from './actividad 3/TodoApp';
 import ChartsDashboard from './actividad4/ChartsDashboard';
+import Todos from './actividad5/TodoGrid';
 import './App.css';
 
 function App() {
@@ -30,7 +31,7 @@ function App() {
               <Route path="/actividad2/*" element={<NavBar />} />
               <Route path="/actividad3" element={<TodoApp />} />
               <Route path="/actividad4" element={<ChartsDashboard />} />
-              <Route path="/actividad5" element={<div>Actividad 5 en construcción</div>} />
+              <Route path="/actividad5" element={<Todos />} />
             </Routes>
           </main>
         </div>

@@ -30,6 +30,10 @@ const BookList = () => {
     return Array.isArray(array) && array.length > 0 ? array[0] : 'No disponible';
   };
 
+  const getBookKey = (book) => {
+    return `${book.title}-${getFirstValue(book.author_name)}-${book.first_publish_year || 'unknown'}`;
+  };
+
   return (
     <div className="book-list-container">
       <h1>Biblioteca Virtual</h1>
@@ -38,7 +42,7 @@ const BookList = () => {
       {!isLoading && !isError && (
         <div className="books-grid">
           {books.map((book) => (
-            <div key={book.key} className="book-card">
+            <div key={getBookKey(book)} className="book-card">
               <h2>{book.title}</h2>
               <div className="book-details">
                 <p><strong>Año:</strong> {book.first_publish_year || 'No disponible'}</p>
