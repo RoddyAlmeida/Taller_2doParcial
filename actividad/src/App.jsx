@@ -4,6 +4,7 @@ import { UserProvider } from './actividad2/contexts/UserContext';
 import BookList from './actividad1/booklist';
 import NavBar from './actividad2/NavBar';
 import TodoApp from './actividad 3/TodoApp';
+import ChartsDashboard from './actividad4/ChartsDashboard';
 import './App.css';
 
 function App() {
@@ -28,7 +29,7 @@ function App() {
               <Route path="/actividad1" element={<BookList />} />
               <Route path="/actividad2/*" element={<NavBar />} />
               <Route path="/actividad3" element={<TodoApp />} />
-              <Route path="/actividad4" element={<div>Actividad 4 en construcción</div>} />
+              <Route path="/actividad4" element={<ChartsDashboard />} />
               <Route path="/actividad5" element={<div>Actividad 5 en construcción</div>} />
             </Routes>
           </main>

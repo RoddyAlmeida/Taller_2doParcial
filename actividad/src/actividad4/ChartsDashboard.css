@@ -1,0 +1,86 @@
+.charts-dashboard {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.chart-controls {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.chart-button {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  background: #f0f0f0;
+  color: #333;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 1rem;
+}
+
+.chart-button:hover {
+  background: #e0e0e0;
+  transform: translateY(-2px);
+}
+
+.chart-button.active {
+  background: #4299e1;
+  color: white;
+}
+
+.chart-container {
+  background: white;
+  border-radius: 8px;
+  padding: 1rem;
+  min-height: 400px;
+}
+
+/* Estilos para los tooltips de Highcharts */
+.highcharts-tooltip {
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
+}
+
+.highcharts-tooltip span {
+  padding: 10px;
+  background: white;
+  border-radius: 4px;
+}
+
+/* Estilos para las leyendas */
+.highcharts-legend-item text {
+  font-weight: 500;
+}
+
+/* Estilos para los títulos */
+.highcharts-title {
+  font-size: 1.5rem !important;
+  font-weight: bold !important;
+  fill: #2d3748 !important;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .charts-dashboard {
+    padding: 1rem;
+  }
+
+  .chart-controls {
+    flex-direction: column;
+  }
+
+  .chart-button {
+    width: 100%;
+  }
+
+  .chart-container {
+    min-height: 300px;
+  }
+} 
